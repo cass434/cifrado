@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptacion y Desencriptacion de contraseñas</title>
+</head>
+<style>
+    body{
+        font-family: sans-serif,cursive;
+        align-content: center;
+        background: gray;
+    }
+    label{
+        font-size: 24px;
+    }
+    .texto{
+        font-family: sans-serif;
+        font-size: 18px;
+        background-color: black;
+        color: white;
+
+        display: inline-block;
+        width: 70px;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+    }
+    .btnText{
+        background-color: black;
+        border: none;
+        color: white;
+        padding: 15px 35px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 15px;
+        border-radius: 5px;
+
+    }
+    .btnE{
+        background-color: black;
+        border: none;
+        color: white;
+        padding: 15px 35px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 15px;
+        border-radius: 5px;
+
+    }
+    .btnD{
+        background-color: #53526a;
+        border: none;
+        color: white;
+        padding: 15px 35px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 15px;
+        border-radius: 5px;
+
+    }
+
+    form{
+        padding: 20px 80px 25px;
+    }
+
+    .ventana{
+        padding: 20px 80px 25px;
+
+        background-color: #f1f2f7;
+        display: inline-block;
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+    }
+</style>
+<body>
+    <center><h1>Cifrado Simétrico</h1></center>
+    <form method="post" action="contraseña.php" target="ventana"></form>
+    <label><center>Ingresa un texto:</center></label>
+    <input type="texto" class="texto" name="clave" value="">
+    <input type="submit" class="btnText" name="texto">
+
+    <br>
+
+    <center><input type="submit" class="btnE" name="encriptar" value="Encriptar">
+        <input type="submit" class="btnD" name="desencriptar" value="Cifrar"></center>
+
+        <br>
+        <iframe name="ventana" src="contraseña.php" class="ventana">
+
+        </iframe>
+
+        <br>
+    </form>
+        
+</body>
+</html>
